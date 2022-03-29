@@ -2,8 +2,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { HomeScreen } from '../screens/HomeScreen';
 import { AboutScreen } from '../screens/AboutScreen';
 import { NavigationContainer } from '@react-navigation/native';
+import { RouteList } from '../types/RouteList';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RouteList>();
 
 export const Navigation = () => {
   return (
